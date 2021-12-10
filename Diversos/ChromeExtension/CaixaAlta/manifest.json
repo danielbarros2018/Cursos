@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "author": "Daniel Barros",
+  "name": "Caixa Alta",
+  "version": "0.0.2",
+  "description": "Converter texto para caixa alta",
+  "browser_action": {
+    "default_title": "Cx Alta",
+    "default_popup": "index.html"
+  }
+}

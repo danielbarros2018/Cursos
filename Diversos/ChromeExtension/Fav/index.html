@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Favs</title>
+        <!-- Linkar nosso arquivo CSS -->
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- Importar Font Red Hat Display-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="navbar" class="row">
+            <div class="col-2">
+                <img src="assets/icon.png" width="30">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <button id="btnPageAdd" class="btn btn-link">Adicionar</button>
+                    </div>
+                    <div class="col">
+                        <button id="btnPageSearch" class="btn btn-link">Meus Favs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="add-page" class="content">
+            <h1>Me diga as informações dos seus <i>Favs</i></h1>
+            <form>
+                <div class="form-group">
+                    <label for="form-title" class="sr-only">Título da página</label>
+                    <input type="text" id="form-title" class="form-control" placeholder="Título">
+                    <small class="form-text text-muted">Edit como quiser</small>
+                </div>
+                <div class="form-group">
+                    <label for="form-category" class="sr-only">Categoria</label>
+                    <input type="text" id="form-category" class="form-control" placeholder="Categoria">
+                </div>
+                <div class="form-group">
+                    <label for="form-annotations" class="sr-only">Categoria</label>
+                    <textarea id="form-annotations" class="form-control" placeholder="Anotações"></textarea>
+                </div>
+            </form>
+            <button id="form-submit" class="btn btn-primary btn-favs">Salvar</button>
+            <b>Não se preocupe com o link, deixe conosco</b>
+        </div>
+
+        <div id="search-page" class="content" style="display: none">
+            <h1>Retome a partir do <i>Fav</i> que você adicionou</h1>
+            <div id="category-container">
+
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
